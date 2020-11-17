@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Evaluacion1</string>
+
+    <array name="tipoTarjeta">
+        <item>Efectivo</item>
+        <item>Tarjeta de credito</item>
+        <item>Bono</item>
+    </array>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3.Ejercicio3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lvProductos"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Ingrese Nombre Producto:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:id="@+id/etNomProd"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Ingrese Precio Producto:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/etPreProd"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Ingrese Cantidad:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:id="@+id/etCant"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Método de pago:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spnTipoPago"
+            android:entries="@array/tipoTarjeta"
+            android:layout_height="wrap_content"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Agregar Producto"
+                android:onClick="agregarProducto"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Eliminar Producto"
+                android:id="@+id/btnDeleteProducto"
+                android:onClick="deleteProducto"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent"
+            android:text="Resumen Compra:"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvResumenCompra"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
+
